@@ -19,12 +19,20 @@
         placeholder = "密码"
         :rules="[{required:true,message:'请填写密码'}]"
         />
+
+        <div style="margin:16px">
+          <div class="link-login" @click="toggle('login')">已有登录账号</div>
+          <van-button round block color="#1baeae" native-type="submit">注册</van-button>
+        </div>
     </van-form>
   </div>
 </template>
 
 <script>
 import sHeader from "../components/SimpleHeader.vue"
+import {reactive,ref,toRefs} from "vue"
+import {login ,register} from "@/service/user"
+import {setLocal } from "@/common/js/utils"
 export default {
     name:"login",
     components:{

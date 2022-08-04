@@ -1,13 +1,13 @@
 <template>
-  <s-header></s-header>
+<login></login>
 </template>
 
 <script>
-import SHeader from "./components/SimpleHeader.vue" 
+import Login from "./views/Login.vue"
 export default {
   name:"app",
   components:{
-    SHeader
+    Login
   }
 }
 </script>

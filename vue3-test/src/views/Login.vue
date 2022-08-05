@@ -20,7 +20,7 @@
         :rules="[{required:true,message:'请填写密码'}]"
         />
 
-         <div style="margin:16px">
+         <div style="margin: 16px;">
           <div class="link-register" @click="toggle('register')">立即注册</div>
           <van-button round block color="#1baeae" native-type="submit">登录</van-button>
         </div>
@@ -43,7 +43,7 @@
       placeholder="密码"
       :rules="[{required:true,message:'请填写密码'}]"
       />
-      <div style="margin:16px">
+      <div style="margin: 16px;">
         <div class="link-login" @click="toggle('login')">已有登录账号</div>
         <van-button round block color="#1baeae" native-type="submit">注册</van-button>
       </div>

@@ -24,7 +24,16 @@ const router = createRouter({
             path:"/home",
             name:"home",
             component:()=>import(/*webpackCHunkName:"home"*/"../views/Home.vue")
-        }
+        },
+        {
+            path:"/cart",
+            name:"cart",
+            component:()=>import(/*webpackChunkName:"cart"*/"../views/Cart.vue"),
+            meta:{
+                index:1
+            }
+        },
+        
     ]
 })
 
